@@ -16,11 +16,11 @@ exclude = [
 features = [ "without-ocamlopt" ]
 
 [dependencies]
-ocaml-sys = "0.22"
-ocaml-boxroot-sys = "0.2"
+ocaml-sys = {git = "https://github.com/crackcomm/ocaml-rs.git", branch = "esy-build"}
+ocaml-boxroot-sys = {git = "https://github.com/crackcomm/ocaml-boxroot.git", branch = "esy-build"}
 static_assertions = "1.1.0"
 
 [features]
-without-ocamlopt = ["ocaml-sys/without-ocamlopt", "ocaml-boxroot-sys/without-ocamlopt"]
+without-ocamlopt = ["ocaml-sys/without-ocamlopt"]
 caml-state = ["ocaml-sys/caml-state"]
 no-caml-startup = []
