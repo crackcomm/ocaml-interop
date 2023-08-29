@@ -16,7 +16,7 @@ exclude = [
 features = [ "without-ocamlopt" ]
 
 [dependencies]
-ocaml-sys = "0.23"
+ocaml-sys = { git = "https://github.com/crackcomm/ocaml-rs.git", branch = "ocaml5-fortran" }
 ocaml-boxroot-sys = "0.3.0"
 static_assertions = "1.1.0"
 
